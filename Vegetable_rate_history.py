@@ -104,8 +104,6 @@ graphpath = dati.now(timezone('Asia/Kolkata')).strftime('%Y-%m-%d_%H-%M-%S') + '
 if not os.path.exists(graphpath):
   os.makedirs(graphpath)
 
-# !rm -rf 1
-
 for vegs in fulldata.keys():
   graphimagename = graphpath + vegs + '.png'
   xaxisvalues = []
